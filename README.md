@@ -7,7 +7,7 @@ Instalacja:
 sudo install -m 777 -d /dane/skrypty/
 cd /dane/skrypty/ 
 sudo git clone git@192.168.10.100:m.rygiel/bash-git-prompt.git
-sudo cp -f /dane/skrypty/etc/bashrc /etc/bashrc
+sudo cp -f /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
 ```
 
 Po czym trzeba sie przelogowac.

@@ -17,7 +17,7 @@ Efekt końcowy:
 ![Example prompt](git-bash-rm-screenshot.png)
 
 
-Uwaga!   
+# Dziwne krzaki w konsoli?
 Aby symbole poprawnie Wam się wyświetlały w konsoli - trzeba ustawić sobie czcionkę "DejaVu Sans Mono" (środkowo-europejski).
 
 Można to zrobić w Putty:   
@@ -30,3 +30,9 @@ Można to zrobić w Putty:
 
 Pewnie jakieś inne czcionki też dobrze działają, pamiętajcie tylko aby to była czcionka o stałej szerokości znaków.  
 Jak zamiast symboli macie jakieś krzaczki/kwadraciki to znaczy, że macie ustawioną złą czcionkę.
+
+
+# Known Bugs
+* Wsparcie dla GIT-a (dodatkowy panel) nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. Tymczasowy walkaround to po prostu wyjście z MC.
+
+

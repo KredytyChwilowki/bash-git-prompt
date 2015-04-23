@@ -25,9 +25,8 @@ Można to zrobić w Putty:
 2) z menu wybrać "Change Settings..."  
 3) w oknie ustawień - z menu po lewej stronie wybrać "Window" / "Apperance"   
 4) po prawiej stronie w sekcji "Font settings" kliknąć w "Change..." i wybrać odpowiednią czcionkę.  
-5) teraz warto jeszcze przejść do sekcji po lewej stronie "Session"
+5) teraz warto jeszcze przejść do sekcji po lewej stronie "Session"  
 6) po prawej stronie wybrać "Default Settings" i kliknąć "Save" (to zapiszę wybraną czcionkę jako ustawienie domyślne)
 
 Pewnie jakieś inne czcionki też dobrze działają, pamiętajcie tylko aby to była czcionka o stałej szerokości znaków.  
 Jak zamiast symboli macie jakieś krzaczki/kwadraciki to znaczy, że macie ustawioną złą czcionkę.
-

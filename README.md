@@ -1,4 +1,4 @@
-# Kolorowanie w bashu + pelne wsparcie dla gita z autouzupelnianiem? Dobrze trailes.
+# Kolorowanie w bashu + pełne wsparcie dla gita z autouzupełnianiem :)
 
 Jest to FORK z https://github.com/magicmonty/bash-git-prompt dostosowany do mojego skryptu koloryzujacego basha.
 Instalacja:
@@ -15,8 +15,9 @@ Efekt koncowy:
 
 ![Example prompt](git-bash-rm-screenshot.png)
 
-Oryginalny "read me" ponizej:
 
+
+Oryginalny "read me" ponizej:
 
 # Informative git prompt for bash and fish
 

@@ -33,4 +33,7 @@ Jak zamiast symboli macie jakieś krzaczki/kwadraciki to znaczy, że macie ustaw
 
 
 # Known Bugs
-* Wsparcie dla GIT-a (dodatkowy panel) domyślnie nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. Aby zmusić MC do poprawnego działania wystarczy jednorazowo będąc w MC odpalić komendę ```mcgit```.
+* Wsparcie dla GIT-a (dodatkowy panel) domyślnie nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. 
+Aby zmusić MC do poprawnego działania wystarczy jednorazowo będąc w MC odpalić komendę ```mcgit```. Wygląda to wówczas następująco:
+
+![Example prompt in MC](git-bash-rm-screenshot-mc.png)

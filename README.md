@@ -33,6 +33,5 @@ Jak zamiast symboli macie jakieś krzaczki/kwadraciki to znaczy, że macie ustaw
 
 
 # Known Bugs
-* Wsparcie dla GIT-a (dodatkowy panel) nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. Tymczasowy walkaround to po prostu wyjście z MC.
-
-
+* Wsparcie dla GIT-a (dodatkowy panel) nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. Wynika to z faktu, że MC ma swojego ".bashrc", którego nie można podmienić ponieważ jest "hard-coded" (skompilowany na szytwno). 
+Jest jednak na to sposób -- wystarczy, że będąc w sub-shell'u MC (CTRL+O) ponownie wpiszę się "sudo su" -- wtedy odpala się czysty bash w (sub-sub-shell'u :D) i działa jak trzeba :).

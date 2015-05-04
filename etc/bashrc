@@ -60,6 +60,7 @@ fi
 
 ### Ustawienia historii bash-a w MC
 alias mc='PROMPT_COMMAND="history -a; history -r" mc; history -r'
+alias mcgit='source /dane/skrypty/bash-git-prompt/gitprompt.sh'
 
 ### as last entry source the gitprompt script
 GIT_PROMPT_ONLY_IN_REPO=1

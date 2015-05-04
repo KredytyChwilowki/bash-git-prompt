@@ -5,9 +5,10 @@ Instalacja:
 
 ```sh
 sudo install -m 777 -d /dane/skrypty/
-cd /dane/skrypty/ 
-sudo git clone git@192.168.10.100:m.rygiel/bash-git-prompt.git
-sudo cp -f /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
+cd /dane/skrypty/ && sudo git clone git@192.168.10.100:m.rygiel/bash-git-prompt.git
+chmod 777 /dane/skrypty/bash-git-prompt/etc/bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
+sudo mv -f /etc/bashrc /etc/bashrc.old
+sudo ln -s /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
 ```
 
 Po czym trzeba się przelogować.
@@ -33,5 +34,4 @@ Jak zamiast symboli macie jakieś krzaczki/kwadraciki to znaczy, że macie ustaw
 
 
 # Known Bugs
-* Wsparcie dla GIT-a (dodatkowy panel) nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. Wynika to z faktu, że MC ma swojego ".bashrc", którego nie można podmienić ponieważ jest "hard-coded" (skompilowany na szytwno). 
-Jest jednak na to sposób -- wystarczy, że będąc w sub-shell'u MC (CTRL+O) ponownie wpiszę się "sudo su" -- wtedy odpala się czysty bash w (sub-sub-shell'u :D) i działa jak trzeba :).
+* Wsparcie dla GIT-a (dodatkowy panel) domyślnie nie wyświetla się w subshell-u MC (midnight commander-a), czyli konsola w trybie CTRL+O nie działa jak trzeba. Aby zmusić MC do poprawnego działania wystarczy jednorazowo odpalić "mcgit". 

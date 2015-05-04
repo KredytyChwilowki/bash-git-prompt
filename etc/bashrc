@@ -58,6 +58,9 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+### Ustawienia historii bash-a w MC
+alias mc='PROMPT_COMMAND="history -a; history -r" mc; history -r'
+
 ### as last entry source the gitprompt script
 GIT_PROMPT_ONLY_IN_REPO=1
 GIT_PROMPT_THEME=Single_line_RM

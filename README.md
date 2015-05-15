@@ -10,6 +10,7 @@ sudo mv -f /etc/bashrc /etc/bashrc.old
 chmod 777 /dane/skrypty/bash-git-prompt/etc/bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
 rm -f /etc/bash_completion.d/git
 chmod 777 /dane/skrypty/bash-git-prompt/etc/bash_completion.d/git-completion.bash && ln -s /dane/skrypty/bash-git-prompt/etc/bash_completion.d/git-completion.bash /etc/bash_completion.d/git
+yum install bash-completion.noarch
 ```
 
 Po czym trzeba się przelogować.

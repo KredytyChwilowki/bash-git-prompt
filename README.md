@@ -1,11 +1,11 @@
 # Kolorowanie w bashu + pełne wsparcie dla gita z autouzupełnianiem :)
 
 Jest to FORK z https://github.com/magicmonty/bash-git-prompt dostosowany do mojego skryptu koloryzującego basha.  
-Instalacja:
+Instalacja (wersja dla posiadaczy CentOS):
 
 ```sh
 sudo install -m 777 -d /dane/skrypty/
-cd /dane/skrypty/ && sudo git clone git@192.168.10.100:m.rygiel/bash-git-prompt.git
+cd /dane/skrypty/ && sudo git clone https://github.com/KredytyChwilowki/bash-git-prompt.git
 sudo mv -f /etc/bashrc /etc/bashrc.old
 chmod 777 /dane/skrypty/bash-git-prompt/etc/bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
 rm -f /etc/bash_completion.d/git

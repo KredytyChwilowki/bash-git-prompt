@@ -1,16 +1,32 @@
 # Kolorowanie w bashu + pełne wsparcie dla gita z autouzupełnianiem :)
 
 Jest to FORK z https://github.com/magicmonty/bash-git-prompt dostosowany do mojego skryptu koloryzującego basha.  
-Instalacja (wersja dla posiadaczy CentOS):
+
+# Instalacja (wersja dla posiadaczy CentOS)
 
 ```sh
 sudo install -m 777 -d /dane/skrypty/
-cd /dane/skrypty/ && sudo git clone https://github.com/KredytyChwilowki/bash-git-prompt.git
+cd /dane/skrypty/ && test -d "/dane/skrypty/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git && cd bash-git-prompt && git pull
 sudo mv -f /etc/bashrc /etc/bashrc.old
 chmod 777 /dane/skrypty/bash-git-prompt/etc/bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
 rm -f /etc/bash_completion.d/git
 chmod 777 /dane/skrypty/bash-git-prompt/etc/bash_completion.d/git-completion.bash && ln -s /dane/skrypty/bash-git-prompt/etc/bash_completion.d/git-completion.bash /etc/bash_completion.d/git
 yum install bash-completion.noarch
+```
+
+Po czym trzeba się przelogować.
+
+# Instalacja (wersja dla posiadaczy Ubuntu)
+
+```sh
+sudo install -m 777 -d /dane/skrypty/
+cd /dane/skrypty/ && test -d "/dane/skrypty/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
+cd /dane/skrypty/bash-git-prompt && git pull
+sudo mv -f ~/.bashrc ~/.bashrc.orginal
+chmod 644 /dane/skrypty/bash-git-prompt/etc/.bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/.bashrc ~/.bashrc
+test -f "/etc/bash_completion.d/git" && sudo rm -f /etc/bash_completion.d/git
+chmod 644 /dane/skrypty/bash-git-prompt/etc/bash_completion.d/git-completion.bash && sudo ln -s /dane/skrypty/bash-git-prompt/etc/bash_completion.d/git-completion.bash /etc/bash_completion.d/git
+sudo apt install bash-completion
 ```
 
 Po czym trzeba się przelogować.

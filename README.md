@@ -20,7 +20,7 @@ Po czym trzeba się przelogować.
 
 ```sh
 sudo install -m 777 -d /dane/skrypty/
-cd /dane/skrypty/ && test -d "/dane/skrypty/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
+cd /dane/skrypty/ && test ! -d "/dane/skrypty/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
 cd /dane/skrypty/bash-git-prompt && git pull
 sudo mv -f ~/.bashrc ~/.bashrc.orginal
 chmod 644 /dane/skrypty/bash-git-prompt/etc/.bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/.bashrc ~/.bashrc

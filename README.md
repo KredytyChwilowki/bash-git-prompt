@@ -6,7 +6,7 @@ Jest to FORK z https://github.com/magicmonty/bash-git-prompt dostosowany do moje
 
 ```sh
 sudo install -m 777 -d /dane/skrypty/
-cd /dane/skrypty/ && test ! -d "/dane/skrypty/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
+cd /dane/skrypty/ && test ! -d "/dane/skrypty/bash-git-prompt/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
 cd /dane/skrypty/bash-git-prompt && git pull
 sudo mv -f /etc/bashrc /etc/bashrc.old
 chmod 777 /dane/skrypty/bash-git-prompt/etc/bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/bashrc /etc/bashrc
@@ -21,7 +21,7 @@ Po czym trzeba się przelogować.
 
 ```sh
 sudo install -m 777 -d /dane/skrypty/
-cd /dane/skrypty/ && test ! -d "/dane/skrypty/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
+cd /dane/skrypty/ && test ! -d "/dane/skrypty/bash-git-prompt/.git" && git clone https://github.com/KredytyChwilowki/bash-git-prompt.git 
 cd /dane/skrypty/bash-git-prompt && git pull
 sudo mv -f ~/.bashrc ~/.bashrc.orginal
 chmod 644 /dane/skrypty/bash-git-prompt/etc/.bashrc && ln -s /dane/skrypty/bash-git-prompt/etc/.bashrc ~/.bashrc

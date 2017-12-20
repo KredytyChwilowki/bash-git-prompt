@@ -54,8 +54,8 @@ declare -x EDITOR='vim'
 declare -x VISUAL="${EDITOR}"
 declare -x FCEDIT="${EDITOR}"
 
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
+if [ -f /etc/bash_completion.d/git ]; then
+    . /etc/bash_completion.d/git
 fi
 
 ### Ustawienia historii bash-a w MC

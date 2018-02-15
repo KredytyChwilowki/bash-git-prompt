@@ -16,7 +16,7 @@ PS_PS2_R="\[\033[0;31m\] ->\[\033[0m\] ";
 PS_PS2_U="\[\033[0;32m\] ->\[\033[0m\] ";
 
 PS_AT="\[\033[0;33m\]@";
-PS_HOST="\[\033[1;37m\]`cat /etc/sysconfig/network | awk '/HOSTNAME/ {split($1, hostname, "="); print hostname[2]};'`";
+PS_HOST="\[\033[1;37m\]`cat /etc/hostname`";
 PS_TIME="\[\033[1;32m\][\$(date +%H:%M)]";
 
 

@@ -58,6 +58,9 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+### prawdopodobnie fix na problemy z rozszerzaniem/przechodzeniem przez dockera terminala
+shopt -s checkwinsize
+
 ### Ustawienia historii bash-a w MC
 alias mc='PROMPT_COMMAND="history -a; history -r" mc; history -r'
 alias mcgit='source /dane/skrypty/bash-git-prompt/gitprompt.sh'
